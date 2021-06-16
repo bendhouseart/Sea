@@ -1,0 +1,90 @@
+[
+    {
+        "name": "lustre_1n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 1,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_2n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 2,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_3n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 3,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_4n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 4,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_5n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_6n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 5,
+        "nnodes": 6,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_7n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 6,
+        "nnodes": 7,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "lustre_8n_6t_6d_1000f_617m_1i",
+        "ndisks": 6,
+        "nthreads": 5,
+        "nnodes": 8,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 1,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    }
+]

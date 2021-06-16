@@ -1,0 +1,150 @@
+Clearing cache
+Clearing cache
+Clearing cache
+Clearing cache
+Clearing cache
+Clearing cache
+Clearing cache
+3
+read_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_0_0_0.nii,1604425328.162267,1072020,comp03
+Traceback (most recent call last):
+  File "increment.py", line 25, in <module>
+    im = nib.load(in_file)
+  File "/home/vhs/Sea/.venv/lib64/python3.6/site-packages/nibabel/loadsave.py", line 56, in load
+    filename)
+nibabel.filebasedimages.ImageFileError: Cannot work out file type of "/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_0_0_0.nii"
+read_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425328.3234234,1630175,comp01
+read_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425331.1203775,1630175,comp01
+inc_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425331.1205423,1630175,comp01
+inc_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425331.1784143,1630175,comp01
+save_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425331.179872,1630175,comp01
+save_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_1540_3020_4170.nii,1604425331.9152358,1630175,comp01
+read_start,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425331.9153235,1630175,comp01
+read_end,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425332.486892,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425332.4869509,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425332.5418725,1630175,comp01
+save_start,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425332.5684328,1630175,comp01
+save_end,/mnt/lustre/vhs/output/0-inc-bigbrain_1540_3020_4170.nii,1604425333.3639183,1630175,comp01
+read_start,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425333.3642213,1630175,comp01
+read_end,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425333.9412584,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425333.9412973,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425333.9958208,1630175,comp01
+save_start,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425334.016238,1630175,comp01
+save_end,/mnt/lustre/vhs/output/1-inc-bigbrain_1540_3020_4170.nii,1604425334.7370377,1630175,comp01
+read_start,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425334.7371733,1630175,comp01
+read_end,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425335.31258,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425335.3126106,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425335.3671515,1630175,comp01
+save_start,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425335.3863747,1630175,comp01
+save_end,/mnt/lustre/vhs/output/2-inc-bigbrain_1540_3020_4170.nii,1604425336.0166192,1630175,comp01
+read_start,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425336.0166788,1630175,comp01
+read_end,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425336.5717494,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425336.5717876,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425336.6262367,1630175,comp01
+save_start,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425336.6447756,1630175,comp01
+save_end,/mnt/lustre/vhs/output/3-inc-bigbrain_1540_3020_4170.nii,1604425337.3093052,1630175,comp01
+read_start,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425337.3093624,1630175,comp01
+read_end,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425337.84364,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425337.843673,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425337.8975728,1630175,comp01
+save_start,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425337.9150794,1630175,comp01
+save_end,/mnt/lustre/vhs/output/4-inc-bigbrain_1540_3020_4170.nii,1604425339.023951,1630175,comp01
+read_start,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425339.024011,1630175,comp01
+read_end,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425339.5313547,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425339.531386,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425339.5843663,1630175,comp01
+save_start,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425339.600779,1630175,comp01
+save_end,/mnt/lustre/vhs/output/5-inc-bigbrain_1540_3020_4170.nii,1604425342.8489425,1630175,comp01
+read_start,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425342.8490393,1630175,comp01
+read_end,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425343.3546777,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425343.3547146,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425343.406841,1630175,comp01
+save_start,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425343.4235232,1630175,comp01
+save_end,/mnt/lustre/vhs/output/6-inc-bigbrain_1540_3020_4170.nii,1604425343.988552,1630175,comp01
+read_start,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425343.9886112,1630175,comp01
+read_end,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425344.4983315,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425344.4983644,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425344.5505698,1630175,comp01
+save_start,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425344.566961,1630175,comp01
+save_end,/mnt/lustre/vhs/output/7-inc-bigbrain_1540_3020_4170.nii,1604425345.171918,1630175,comp01
+read_start,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425345.1719692,1630175,comp01
+read_end,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425345.6614335,1630175,comp01
+inc_start,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425345.6614616,1630175,comp01
+inc_end,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425345.7137952,1630175,comp01
+save_start,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425345.7299764,1630175,comp01
+save_end,/mnt/lustre/vhs/output/8-inc-bigbrain_1540_3020_4170.nii,1604425351.3392503,1630175,comp01
+read_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425328.1526809,572101,comp06
+read_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425335.1530964,572101,comp06
+inc_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425335.1532311,572101,comp06
+inc_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425335.419341,572101,comp06
+save_start,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425335.4205024,572101,comp06
+save_end,/mnt/lustre/shared/bigbrain/nii/1000_blocks/bigbrain_3850_2416_1390.nii,1604425336.3205185,572101,comp06
+read_start,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425336.320644,572101,comp06
+read_end,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425336.921362,572101,comp06
+inc_start,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425336.9214,572101,comp06
+inc_end,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425336.9749901,572101,comp06
+save_start,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425336.9977503,572101,comp06
+save_end,/mnt/lustre/vhs/output/0-inc-bigbrain_3850_2416_1390.nii,1604425337.7712111,572101,comp06
+read_start,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425337.7713094,572101,comp06
+read_end,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425338.2976358,572101,comp06
+inc_start,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425338.297667,572101,comp06
+inc_end,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425338.3510058,572101,comp06
+save_start,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425338.3735795,572101,comp06
+save_end,/mnt/lustre/vhs/output/1-inc-bigbrain_3850_2416_1390.nii,1604425342.1748865,572101,comp06
+read_start,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425342.1750698,572101,comp06
+read_end,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425342.6721346,572101,comp06
+inc_start,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425342.6721628,572101,comp06
+inc_end,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425342.7251604,572101,comp06
+save_start,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425342.7421103,572101,comp06
+save_end,/mnt/lustre/vhs/output/2-inc-bigbrain_3850_2416_1390.nii,1604425345.7852094,572101,comp06
+read_start,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425345.7852993,572101,comp06
+read_end,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425346.3090978,572101,comp06
+inc_start,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425346.3091252,572101,comp06
+inc_end,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425346.3619273,572101,comp06
+save_start,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425346.3782692,572101,comp06
+save_end,/mnt/lustre/vhs/output/3-inc-bigbrain_3850_2416_1390.nii,1604425347.0890749,572101,comp06
+read_start,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425347.0891242,572101,comp06
+read_end,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425347.5802014,572101,comp06
+inc_start,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425347.5802295,572101,comp06
+inc_end,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425347.6329353,572101,comp06
+save_start,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425347.6495714,572101,comp06
+save_end,/mnt/lustre/vhs/output/4-inc-bigbrain_3850_2416_1390.nii,1604425348.233084,572101,comp06
+read_start,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425348.2331345,572101,comp06
+read_end,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425348.714582,572101,comp06
+inc_start,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425348.714611,572101,comp06
+inc_end,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425348.7666528,572101,comp06
+save_start,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425348.7833076,572101,comp06
+save_end,/mnt/lustre/vhs/output/5-inc-bigbrain_3850_2416_1390.nii,1604425352.283741,572101,comp06
+read_start,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425352.2837908,572101,comp06
+read_end,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425352.808604,572101,comp06
+inc_start,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425352.8086622,572101,comp06
+inc_end,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425352.8939934,572101,comp06
+save_start,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425352.9103358,572101,comp06
+save_end,/mnt/lustre/vhs/output/6-inc-bigbrain_3850_2416_1390.nii,1604425355.2946317,572101,comp06
+read_start,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425355.2946858,572101,comp06
+read_end,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425355.780202,572101,comp06
+inc_start,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425355.7802327,572101,comp06
+inc_end,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425355.8330142,572101,comp06
+save_start,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425355.8496919,572101,comp06
+save_end,/mnt/lustre/vhs/output/7-inc-bigbrain_3850_2416_1390.nii,1604425356.4287593,572101,comp06
+read_start,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425356.4288094,572101,comp06
+read_end,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425356.9111307,572101,comp06
+inc_start,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425356.9111612,572101,comp06
+inc_end,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425356.964335,572101,comp06
+save_start,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425356.9807558,572101,comp06
+save_end,/mnt/lustre/vhs/output/8-inc-bigbrain_3850_2416_1390.nii,1604425357.651776,572101,comp06
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+srun: Job step aborted: Waiting up to 32 seconds for job step to finish.
+slurmstepd: error: *** STEP 2827.5 ON comp06 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.6 ON comp07 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.1 ON comp02 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.4 ON comp05 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.2 ON comp03 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.3 ON comp04 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** STEP 2827.7 ON comp01 CANCELLED AT 2020-11-03T17:15:09 ***
+slurmstepd: error: *** JOB 2827 ON comp01 CANCELLED AT 2020-11-03T17:15:09 ***

@@ -45,6 +45,13 @@ SOURCE_1="$PWD/source_1"
     [ ! -f ${SOURCE}/file_in_source.txt ]
     [ ! -f ${SOURCE}/subdir/file_in_subdir.txt ]
 }
+@test "rmdir" {
+    load setup
+    mkdir -p ${MOUNT}/subdir/test1/test2
+    rm -rf ${MOUNT}/subdir
+    load unset
+    [ ! -d ${SOURCE}/subdir ]
+}
 
 @test "cp" {
     load setup
@@ -174,6 +181,7 @@ SOURCE_1="$PWD/source_1"
 @test "cd" {
     load setup
     out=$(bash -c "cd ${MOUNT};ls")
+    echo $out
     [[ $out == bin[[:space:]]complex_file.txt[[:space:]]file_in_mem.txt[[:space:]]file_in_source.txt[[:space:]]subdir ]]
 }
 
@@ -218,5 +226,16 @@ SOURCE_1="$PWD/source_1"
     load setup
     unlink ${MOUNT}/file_in_source.txt
     unlink ${MOUNT}/subdir/file_in_subdir.txt
+}
+
+@test "access time" {
+    load setup
+    before=$(ls -lu ${SOURCE}/file_in_source.txt)
+    # ensure at least 1 minute has changed
+    sleep 61
+    after=$(ls -lu ${MOUNT}/file_in_source.txt)
+
+    [[ $before != $after ]] || echo "Before $before After $after"
+    
 }
 

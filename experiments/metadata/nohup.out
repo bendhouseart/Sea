@@ -1,0 +1,3015 @@
+Executing repetition 0
+Preparing experiment launch
+Experiment 6 Run 0 conditions
+name: lustre_7n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 7
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_7n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 142  remainder: 6
+Number of files processed by node 0: 143
+Number of files processed by node 1: 143
+Number of files processed by node 2: 143
+Number of files processed by node 3: 143
+Number of files processed by node 4: 143
+Number of files processed by node 5: 143
+Number of files processed by node 6: 142
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data04]
+ok: [data02]
+ok: [data01]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data03]
+changed: [data02]
+changed: [data01]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       192Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.5Gi        58Gi        33Mi       195Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.2Gi        58Gi        33Mi       195Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.0Gi        59Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_7n_6t_6d_1000f_617m_5i run 0 with id 2853
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 4 Run 0 conditions
+name: lustre_5n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 5
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_5n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 200  remainder: 0
+Number of files processed by node 0: 200
+Number of files processed by node 1: 200
+Number of files processed by node 2: 200
+Number of files processed by node 3: 200
+Number of files processed by node 4: 200
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       192Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.5Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.2Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.0Gi        59Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_5n_6t_6d_1000f_617m_5i run 0 with id 2854
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 0 Run 0 conditions
+name: lustre_1n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 1
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_1n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 1000  remainder: 0
+Number of files processed by node 0: 1000
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data02]
+changed: [data01]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.4Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.2Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.0Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_1n_6t_6d_1000f_617m_5i run 0 with id 2855
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 7 Run 0 conditions
+name: lustre_8n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 8
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_8n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 125  remainder: 0
+Number of files processed by node 0: 125
+Number of files processed by node 1: 125
+Number of files processed by node 2: 125
+Number of files processed by node 3: 125
+Number of files processed by node 4: 125
+Number of files processed by node 5: 125
+Number of files processed by node 6: 125
+Number of files processed by node 7: 125
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_8n_6t_6d_1000f_617m_5i run 0 with id 2856
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 5 Run 0 conditions
+name: lustre_6n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 6
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_6n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 166  remainder: 4
+Number of files processed by node 0: 167
+Number of files processed by node 1: 167
+Number of files processed by node 2: 167
+Number of files processed by node 3: 167
+Number of files processed by node 4: 166
+Number of files processed by node 5: 166
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_6n_6t_6d_1000f_617m_5i run 0 with id 2857
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 3 Run 0 conditions
+name: lustre_4n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 4
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_4n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 250  remainder: 0
+Number of files processed by node 0: 250
+Number of files processed by node 1: 250
+Number of files processed by node 2: 250
+Number of files processed by node 3: 250
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data02]
+ok: [data01]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data04]
+changed: [data02]
+changed: [data03]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_4n_6t_6d_1000f_617m_5i run 0 with id 2858
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 1 Run 0 conditions
+name: lustre_2n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 2
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_2n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 500  remainder: 0
+Number of files processed by node 0: 500
+Number of files processed by node 1: 500
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data04]
+ok: [data01]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_2n_6t_6d_1000f_617m_5i run 0 with id 2859
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 2 Run 0 conditions
+name: lustre_3n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 3
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-0/lustre_3n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 333  remainder: 1
+Number of files processed by node 0: 334
+Number of files processed by node 1: 333
+Number of files processed by node 2: 333
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data04]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_3n_6t_6d_1000f_617m_5i run 0 with id 2860
+Slurm job complete
+Number of files currently on lustre: 0
+Executing repetition 1
+Preparing experiment launch
+Experiment 6 Run 1 conditions
+name: lustre_7n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 7
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_7n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 142  remainder: 6
+Number of files processed by node 0: 143
+Number of files processed by node 1: 143
+Number of files processed by node 2: 143
+Number of files processed by node 3: 143
+Number of files processed by node 4: 143
+Number of files processed by node 5: 143
+Number of files processed by node 6: 142
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data02]
+ok: [data01]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data04]
+changed: [data02]
+changed: [data03]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_7n_6t_6d_1000f_617m_5i run 1 with id 2861
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 2 Run 1 conditions
+name: lustre_3n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 3
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_3n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 333  remainder: 1
+Number of files processed by node 0: 334
+Number of files processed by node 1: 333
+Number of files processed by node 2: 333
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       193Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_3n_6t_6d_1000f_617m_5i run 1 with id 2862
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 0 Run 1 conditions
+name: lustre_1n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 1
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_1n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 1000  remainder: 0
+Number of files processed by node 0: 1000
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.4Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_1n_6t_6d_1000f_617m_5i run 1 with id 2863
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 1 Run 1 conditions
+name: lustre_2n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 2
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_2n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 500  remainder: 0
+Number of files processed by node 0: 500
+Number of files processed by node 1: 500
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_2n_6t_6d_1000f_617m_5i run 1 with id 2864
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 4 Run 1 conditions
+name: lustre_5n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 5
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_5n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 200  remainder: 0
+Number of files processed by node 0: 200
+Number of files processed by node 1: 200
+Number of files processed by node 2: 200
+Number of files processed by node 3: 200
+Number of files processed by node 4: 200
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data02]
+changed: [data04]
+changed: [data03]
+changed: [data01]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_5n_6t_6d_1000f_617m_5i run 1 with id 2865
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 5 Run 1 conditions
+name: lustre_6n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 6
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_6n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 166  remainder: 4
+Number of files processed by node 0: 167
+Number of files processed by node 1: 167
+Number of files processed by node 2: 167
+Number of files processed by node 3: 167
+Number of files processed by node 4: 166
+Number of files processed by node 5: 166
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_6n_6t_6d_1000f_617m_5i run 1 with id 2866
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 3 Run 1 conditions
+name: lustre_4n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 4
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_4n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 250  remainder: 0
+Number of files processed by node 0: 250
+Number of files processed by node 1: 250
+Number of files processed by node 2: 250
+Number of files processed by node 3: 250
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data02]
+ok: [data03]
+ok: [data01]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_4n_6t_6d_1000f_617m_5i run 1 with id 2867
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 7 Run 1 conditions
+name: lustre_8n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 8
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-1/lustre_8n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 125  remainder: 0
+Number of files processed by node 0: 125
+Number of files processed by node 1: 125
+Number of files processed by node 2: 125
+Number of files processed by node 3: 125
+Number of files processed by node 4: 125
+Number of files processed by node 5: 125
+Number of files processed by node 6: 125
+Number of files processed by node 7: 125
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data04]
+changed: [data03]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_8n_6t_6d_1000f_617m_5i run 1 with id 2868
+Slurm job complete
+Number of files currently on lustre: 0
+Executing repetition 2
+Preparing experiment launch
+Experiment 5 Run 2 conditions
+name: lustre_6n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 6
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_6n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 166  remainder: 4
+Number of files processed by node 0: 167
+Number of files processed by node 1: 167
+Number of files processed by node 2: 167
+Number of files processed by node 3: 167
+Number of files processed by node 4: 166
+Number of files processed by node 5: 166
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data04]
+ok: [data03]
+ok: [data02]
+ok: [data01]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data04]
+changed: [data03]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_6n_6t_6d_1000f_617m_5i run 2 with id 2869
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 0 Run 2 conditions
+name: lustre_1n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 1
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_1n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 1000  remainder: 0
+Number of files processed by node 0: 1000
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       201Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_1n_6t_6d_1000f_617m_5i run 2 with id 2870
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 2 Run 2 conditions
+name: lustre_3n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 3
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_3n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 333  remainder: 1
+Number of files processed by node 0: 334
+Number of files processed by node 1: 333
+Number of files processed by node 2: 333
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data04]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       201Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_3n_6t_6d_1000f_617m_5i run 2 with id 2871
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 6 Run 2 conditions
+name: lustre_7n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 7
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_7n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 142  remainder: 6
+Number of files processed by node 0: 143
+Number of files processed by node 1: 143
+Number of files processed by node 2: 143
+Number of files processed by node 3: 143
+Number of files processed by node 4: 143
+Number of files processed by node 5: 143
+Number of files processed by node 6: 142
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data04]
+changed: [data03]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       201Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_7n_6t_6d_1000f_617m_5i run 2 with id 2872
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 4 Run 2 conditions
+name: lustre_5n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 5
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_5n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 200  remainder: 0
+Number of files processed by node 0: 200
+Number of files processed by node 1: 200
+Number of files processed by node 2: 200
+Number of files processed by node 3: 200
+Number of files processed by node 4: 200
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data04]
+changed: [data03]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       201Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_5n_6t_6d_1000f_617m_5i run 2 with id 2873
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 7 Run 2 conditions
+name: lustre_8n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 8
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_8n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 125  remainder: 0
+Number of files processed by node 0: 125
+Number of files processed by node 1: 125
+Number of files processed by node 2: 125
+Number of files processed by node 3: 125
+Number of files processed by node 4: 125
+Number of files processed by node 5: 125
+Number of files processed by node 6: 125
+Number of files processed by node 7: 125
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data04]
+changed: [data01]
+changed: [data03]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_8n_6t_6d_1000f_617m_5i run 2 with id 2874
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 1 Run 2 conditions
+name: lustre_2n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 2
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_2n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 500  remainder: 0
+Number of files processed by node 0: 500
+Number of files processed by node 1: 500
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_2n_6t_6d_1000f_617m_5i run 2 with id 2875
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 3 Run 2 conditions
+name: lustre_4n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 4
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-2/lustre_4n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 250  remainder: 0
+Number of files processed by node 0: 250
+Number of files processed by node 1: 250
+Number of files processed by node 2: 250
+Number of files processed by node 3: 250
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data04]
+changed: [data03]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_4n_6t_6d_1000f_617m_5i run 2 with id 2876
+Slurm job complete
+Number of files currently on lustre: 0
+Executing repetition 3
+Preparing experiment launch
+Experiment 5 Run 3 conditions
+name: lustre_6n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 6
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-3/lustre_6n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 166  remainder: 4
+Number of files processed by node 0: 167
+Number of files processed by node 1: 167
+Number of files processed by node 2: 167
+Number of files processed by node 3: 167
+Number of files processed by node 4: 166
+Number of files processed by node 5: 166
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data02]
+ok: [data01]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data04]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       196Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_6n_6t_6d_1000f_617m_5i run 3 with id 2877
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 2 Run 3 conditions
+name: lustre_3n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 3
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-3/lustre_3n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 333  remainder: 1
+Number of files processed by node 0: 334
+Number of files processed by node 1: 333
+Number of files processed by node 2: 333
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data02]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_3n_6t_6d_1000f_617m_5i run 3 with id 2878
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 4 Run 3 conditions
+name: lustre_5n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 5
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-3/lustre_5n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 200  remainder: 0
+Number of files processed by node 0: 200
+Number of files processed by node 1: 200
+Number of files processed by node 2: 200
+Number of files processed by node 3: 200
+Number of files processed by node 4: 200
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data03]
+ok: [data01]
+ok: [data02]
+ok: [data04]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data03]
+changed: [data04]
+changed: [data02]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       194Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       198Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.9Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_5n_6t_6d_1000f_617m_5i run 3 with id 2879
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 7 Run 3 conditions
+name: lustre_8n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 8
+number of threads: 5
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-3/lustre_8n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 125  remainder: 0
+Number of files processed by node 0: 125
+Number of files processed by node 1: 125
+Number of files processed by node 2: 125
+Number of files processed by node 3: 125
+Number of files processed by node 4: 125
+Number of files processed by node 5: 125
+Number of files processed by node 6: 125
+Number of files processed by node 7: 125
+
+Removing files from output directory
+rm: cannot remove '/mnt/lustre/vhs/output/*': No such file or directory
+
+PLAY [data] ********************************************************************
+
+TASK [Gathering Facts] *********************************************************
+ok: [data01]
+ok: [data03]
+ok: [data04]
+ok: [data02]
+
+TASK [clear page cache on data nodes] ******************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data02] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data03] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+ok: [data04] => {
+    "cacheout.stdout_lines": [
+        "Clearing cache",
+        "3"
+    ]
+}
+
+TASK [get data node memory usage] **********************************************
+changed: [data01]
+changed: [data02]
+changed: [data03]
+changed: [data04]
+
+TASK [debug] *******************************************************************
+ok: [data01] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       1.3Gi        60Gi        33Mi       195Mi        60Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data02] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.3Gi        58Gi        33Mi       199Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data03] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       3.1Gi        58Gi        33Mi       197Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+ok: [data04] => {
+    "free.stdout_lines": [
+        "              total        used        free      shared  buff/cache   available",
+        "Mem:           62Gi       2.8Gi        59Gi        33Mi       200Mi        58Gi",
+        "Swap:          31Gi          0B        31Gi"
+    ]
+}
+
+PLAY RECAP *********************************************************************
+data01                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data02                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data03                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+data04                     : ok=5    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+
+Launched job lustre_8n_6t_6d_1000f_617m_5i run 3 with id 2880
+Slurm job complete
+Number of files currently on lustre: 0
+Experiment 6 Run 3 conditions
+name: lustre_7n_6t_6d_1000f_617m_5i
+strategy: lustre
+file input folder: /mnt/lustre/shared/bigbrain/nii/1000_blocks/
+number of disks: 6
+number of nodes: 7
+number of threads: 6
+number of files: 1000
+file size in bytes: 646461552
+number of iterations: 1
+Experiment directory: ./results/exp_lustre/run-3/lustre_7n_6t_6d_1000f_617m_5i
+
+Files to be executed per node: 142  remainder: 6
+Number of files processed by node 0: 143
+Number of files processed by node 1: 143
+Number of files processed by node 2: 143
+Number of files processed by node 3: 143
+Number of files processed by node 4: 143
+Number of files processed by node 5: 143
+Number of files processed by node 6: 142
+

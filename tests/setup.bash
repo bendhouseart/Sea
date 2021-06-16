@@ -8,7 +8,7 @@ gen_conf() {
         # Sea configuration
         [Sea]
         mount_dir = ${MOUNT} ;
-        n_sources = 2 ;
+        n_levels = 2 ;
         source_0 = ${SOURCE} ;
         source_1 = ${SOURCE_1}
         log_level = 3 ; # 4 crashes tests
@@ -20,7 +20,7 @@ DOC
         # Sea configuration
         [Sea]
         mount_dir = ${MOUNT} ;
-        n_sources = 1 ;
+        n_levels = 1 ;
         source_0 = ${SOURCE} ;
         log_level = 3 ; # 4 crashes tests
         log_file = ${SEA_HOME}/sea.log ;
@@ -36,13 +36,13 @@ mkdir -p ${SOURCE} ${MOUNT} ${SOURCE_1} # Create source and mount (defined in te
 echo a > a.txt # This file will be used in tests
 echo b > ${SOURCE}/file_in_source.txt # This file will be used in tests
 echo "seafile" > ${SOURCE_1}/file_in_mem.txt
-mkdir ${SOURCE}/subdir
+mkdir ${SOURCE}/subdir ${SOURCE_1}/subdir
 echo a > ${SOURCE}/subdir/file_in_subdir.txt
 echo "a b" > ${SOURCE}/complex_file.txt
-mkdir ${SOURCE}/bin # where fake binaries will be located
+mkdir ${SOURCE}/bin ${SOURCE_1}/bin # where fake binaries will be located
 echo "#!/bin/bash" > ${SOURCE}/bin/hello.sh
 echo "echo \"hello\"" > ${SOURCE}/bin/hello.sh
 chmod +x ${SOURCE}/bin/hello.sh
 export SEA_HOME=$PWD
 gen_conf 1
-export LD_PRELOAD=${PWD}/passthrough.so
+export LD_PRELOAD=${PWD}/build/sea.so

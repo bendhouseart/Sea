@@ -1,0 +1,16 @@
+- hosts: ct02,data
+  remote_user: root
+  tasks:
+      - name: "clear page cache on data nodes"
+        shell: "echo 'Clearing cache' && sync && echo 3 | sudo tee /proc/sys/vm/drop_caches"
+        become: true
+        become_user: root
+        register: cacheout
+      - debug: var=cacheout.stdout_lines
+      - name: "get data node memory usage"
+        shell: "free -h"
+        become: true
+        become_user: root
+        register: free
+      - debug: var=free.stdout_lines
+

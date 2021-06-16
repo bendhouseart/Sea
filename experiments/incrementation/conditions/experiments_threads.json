@@ -1,0 +1,134 @@
+[
+    {
+        "name": "sea_cp_5n_1t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 1,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "cp"
+    },
+    {
+        "name": "sea_mem_5n_1t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 1,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "mem"
+    },
+    {
+        "name": "lustre_5n_1t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 1,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "sea_cp_5n_16t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 16,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "cp"
+    },
+    {
+        "name": "sea_mem_5n_16t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 16,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "mem"
+    },
+    {
+        "name": "lustre_5n_16t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 16,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "sea_cp_5n_32t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 32,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "cp"
+    },
+    {
+        "name": "sea_mem_5n_32t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 32,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "mem"
+    },
+    {
+        "name": "lustre_5n_32t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 32,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    },
+    {
+        "name": "sea_cp_5n_64t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 64,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "cp"
+    },
+    {
+        "name": "sea_mem_5n_64t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 64,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "mem"
+    },
+    {
+        "name": "lustre_5n_64t_6d_1000f_617m_5i",
+        "ndisks": 6,
+        "nthreads": 64,
+        "nnodes": 5,
+        "nfiles": 1000,
+        "in_fldr": "/mnt/lustre/shared/bigbrain/nii/1000_blocks/",
+        "niterations": 5,
+        "fsize": 646461552,
+        "strategy": "lustre"
+    }
+]

@@ -1,0 +1,3 @@
+experiment,repetition,runtime,flush_time,disk_files,total_flush
+sea_mem_5n_64t_6d_1000f_617m_5i,0,397.318281632,0m24.698s real 0m17.956s real 0m17.557s real 0m14.859s real 0m20.456s,878,1000
+lustre_5n_32t_6d_1000f_617m_5i,0,,,0,0

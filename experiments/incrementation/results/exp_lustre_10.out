@@ -1,0 +1,2 @@
+experiment,repetition,runtime,flush_time,disk_files,total_flush
+lustre_6n_6t_6d_1000f_617m_5i,0,982.531023545,,0,0

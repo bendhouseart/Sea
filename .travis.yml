@@ -38,7 +38,7 @@ before_install:
 
 install:
 - docker run --rm -v $PWD:$PWD -w $PWD imagetest:${TAGNAME} make clean
-- docker run --rm -v $PWD:$PWD -w $PWD imagetest:${TAGNAME} make debug_opts="-g -ggdb --coverage -fprofile-arcs -ftest-coverage"
+- docker run --rm -v $PWD:$PWD -w $PWD imagetest:${TAGNAME} make test debug_opts="-g -ggdb --coverage -fprofile-arcs -ftest-coverage"
 
 script:
 - docker run --rm -v $PWD:$PWD -w $PWD imagetest:${TAGNAME} bats tests/tests.bats
